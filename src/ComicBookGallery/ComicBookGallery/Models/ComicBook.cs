@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ComicBookGallery.Models
+﻿namespace ComicBookGallery.Models
 {
-    class ComicBook
+    public class ComicBook
     {
         public int Id { get; set; }
         public string SeriesTitle { get; set; }
@@ -21,5 +15,6 @@ namespace ComicBookGallery.Models
             SeriesTitle.Replace(" ", "-").ToLower() +
             "-" + IssueNumber + ".jpg";
 
+        
     }
 }

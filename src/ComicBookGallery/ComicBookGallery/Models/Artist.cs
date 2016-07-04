@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ComicBookGallery.Models
 {
-    class Artist
+    public class Artist
     {
         public string Role { get; set; }
         public string Name { get; set; }
+        public string FormatedString => $"{Role}: {Name}";
     }
 }
